@@ -30,7 +30,7 @@ class ClassroomSeatingPlanApp:
         num_cols = int(self.col_entry.get())
 
         # load student data from Excel document
-        workbook = openpyxl.load_workbook("/Users/scottminchin/Desktop/python/SeatingPlan.xlsx")
+        workbook = openpyxl.load_workbook("filepath")
         worksheet = workbook.active
         data = []
         for row in worksheet.iter_rows(min_row=2, values_only=True):
